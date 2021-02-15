@@ -1,0 +1,97 @@
+/* Página Inicio */
+nav {
+    background-color: #111111 !important;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif !important ;
+}
+
+.bg-body{ 
+    background: url(/public/images/Wallpaper.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.left-header-home {
+    margin-left: 10px !important;
+    color: #fff;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px;
+}
+
+.right-header-home {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px;
+}
+
+.navbar a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+.logo-menu {
+    width: 65px;
+    margin-left: 230px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}​
+
+#coder {
+    padding-left: 40px;
+}
+
+#designer {
+    padding-left: 60px;
+}
+
+.row-home {
+    padding-top: 14%;
+}
+
+/* Página Contacto */
+.row-contact {
+    padding-top: 3%;
+}
+.contact-header {
+    font-size: 60px;
+}
+
+.navi{
+    background-size: cover;
+}
+#left-contact {
+    padding-left: 60px;
+}
+
+#right-contact {
+    padding-left: 20%;
+}
+
+.left-contact-p {
+    color: #111111;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px;
+}
+
+.bg-body-contact{ 
+    background: url(/public/images/coffe.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* Media Queries para la correcta visualización */
+@media (min-width: 1440px) {
+  
+    .row-home {
+        padding-top: 20%;
+    }
+    
+  }
+
+
+@media (max-width: 1280px){
+  
+    .row-home {
+        padding-top: 20%;
+    }
+    
+  }
