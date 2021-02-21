@@ -31,41 +31,50 @@
           <a class="nav-link" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre mí</a>
+          <a class="nav-link" href="about.html">Sobre mí</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.html">Contacto <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/juanma-gomez/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/jgomez2531" target="_blank"> <i class="fab fa-github fa-lg"></i></i></a>
         </li>
       </ul>
     </div>
   </nav>
 </header>  
-<div class="container-fluid">
-    <div class="row row-contact">
-        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" id="left-contact">
-            <h2 class="contact-header">¿Tomamos un café?</h2>
-            <p class="left-contact-p">Puedes contactar conmigo a traés del sguiente formulario de contacto. Lo antes posible resolveré tus dudas.</p>
-            <br/>
-            <form action="mailto:juanmagomez@outlook.es">
+<main>
+    <div class="grid-container">
+      <div class="grid-item1" id="left-contact">
+          <h2 class="contact-header">¿Tomamos un café?</h2>
+          <p class="left-contact-p">Puedes contactar conmigo a través del siguiente formulario de contacto. Lo antes posible resolveré tus dudas.</p>
+          <br/>
+          <form action="mailto:juanmagomez@outlook.es">
                 <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
                 </div>
                 <div class="form-group">
-                <label for="Mensaje">Mensaje:</label>
-                <textarea class="form-control" id="Mensaje" rows="4" placeholder=" ... " required></textarea>
+                  <label for="Mensaje">Mensaje:</label>
+                  <textarea class="form-control" id="Mensaje" rows="4" placeholder=" ... " required></textarea>
                 </div>
-                <button tye="submit" class="btn btn-secondary">Enviar</button>
-            </form>
-        </div>
+              <button tye="submit" class="btn btn-secondary">Enviar</button>
+              <br/>
+              <br/>
+          </form>
+      </div>
     </div>
-</div>
-
+</main>
 
 <!-- Librerías JS y Popper de BootStrap-->
-<script src="public/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  
+
+<!-- FontAwesome Kit-->
+<script src="https://kit.fontawesome.com/bdc2f2ecb5.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

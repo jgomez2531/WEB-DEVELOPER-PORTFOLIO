@@ -3,8 +3,16 @@ nav {
     background-color: #111111 !important;
 }
 
-h2 {
+h1, h2, h3 {
     font-family: 'Raleway', sans-serif !important ;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .bg-body{ 
@@ -15,12 +23,10 @@ h2 {
 .left-header-home {
     margin-left: 10px !important;
     color: #fff;
-    font-family: 'Roboto', sans-serif !important;
     font-size: 20px;
 }
 
 .right-header-home {
-    font-family: 'Roboto', sans-serif !important;
     font-size: 20px;
 }
 
@@ -49,16 +55,29 @@ h2 {
 }
 
 /* Página Contacto */
-.row-contact {
-    padding-top: 3%;
+
+.bg-body-contact{ 
+    background: url(/public/images/coffe.png) no-repeat center center fixed; 
+    background-size: cover;
 }
+
 .contact-header {
     font-size: 60px;
 }
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
 
-.navi{
-    background-size: cover;
+.grid-item1 {
+    padding-top: 50px;
+    text-align: left;
+    grid-column-start: 1; 
+    grid-column-end: 1; 
 }
+
 #left-contact {
     padding-left: 60px;
 }
@@ -69,13 +88,60 @@ h2 {
 
 .left-contact-p {
     color: #111111;
-    font-family: 'Roboto', sans-serif !important;
     font-size: 20px;
 }
 
-.bg-body-contact{ 
-    background: url(/public/images/coffe.png) no-repeat center center fixed; 
+/* Página About */
+#web-developer{ 
+    background: url(/public/images/web-developer.jpg) no-repeat center right fixed; 
     background-size: cover;
+    height: 300px;
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+#skills{ 
+    height: 450px;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-right: 60px;
+}
+
+.left-header-about {
+    color: #111111;
+    font-size: 17px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.lang-develop {
+    width: 80%;
+    padding-left: 50px;
+}
+
+.bg-orange {
+    background-color: #ff4700;
+}
+
+.bg-green {
+    background-color: #61c80e;
+}
+
+.bg-purple {
+    background-color: #7d2181;
+}
+
+#about-contact {
+    background-color: #49b675;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.about-h3-contact {
+    color: white;
+    text-shadow: 1px 1px 1px #111111;
+    margin-bottom: 20px;
 }
 
 /* Media Queries para la correcta visualización */
@@ -85,7 +151,7 @@ h2 {
         padding-top: 20%;
     }
     
-  }
+}
 
 
 @media (max-width: 1280px){
@@ -93,5 +159,139 @@ h2 {
     .row-home {
         padding-top: 20%;
     }
+    
+}
+
+@media (max-width: 1024px) {
+
+    #designer {
+        display: none;
+    }
+
+    #coder {
+        display: none;
+    }
+
+    .lang-develop {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
+
+    .left-header-about {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 450px) {
+  
+    .bg-body-contact{ 
+        background: url(/public/images/coffe-mobile.png) no-repeat center right fixed; 
+        background-size: 150px;
+    }
+
+    .bg-body {
+        background: url(/public/images/Wallpaper-mobile.png) no-repeat center bottom fixed; 
+        background-size: cover;
+    }
+
+    #designer {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        background: url(/public/images/abstract-oil.jpg) no-repeat center center fixed; 
+        background-size: cover;
+        display: block;
+    }
+
+    #coder {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    .right-header-home {
+        font-weight: 600;
+    }
+
+    .row-home {
+        padding-top: 0;
+    }
+
+    .logo-menu {
+        width: 65px;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .left-contact-p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 45px !important;
+    }
+
+    #left-contact {
+        padding-left: 30px;
+    }
+
+    .navbar-toggler-icon {
+        align-items: center !important;
+    }
+
+    .navbar a{
+        font-size: 17px;
+    }
+
+    .logo-menu {
+        width: 65px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    #web-developer {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .left-header-about {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #progress-bar {
+        display: none;
+    }
+
+    .lang-develop {
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        padding-top: 0px
+    }
+
+    .skills-p{ 
+        font-size: 14px;
+    }
+
+    .about-h3-contact {
+        font-size: 35px;
+    }
+
+    #button-about {
+        font-size: 16px;
+    }
+
     
   }
